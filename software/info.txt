@@ -1,0 +1,1 @@
+This folder contains frontend, backend, AI model, and ESP32 code for the project.
