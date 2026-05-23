@@ -1,0 +1,1 @@
+this folder contains the code used in this project for the esp32 to read the value from the sensor and also to send it to the backend and display it or lcd display.
