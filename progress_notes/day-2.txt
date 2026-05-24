@@ -1,0 +1,7 @@
+# Day 2 Progress
+
+Worked on hardware planning and ESP32 sensor integration setup.
+
+Prepared MQ-2 sensor reading code and documented hardware connections.
+
+Currently waiting for USB cable to test live sensor readings on ESP32 hardware.
