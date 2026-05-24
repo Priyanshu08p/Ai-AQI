@@ -1,0 +1,5 @@
+connections of MQ-2 amd ESP32 (testing to read value of sensor):
+VCC :  5V     
+GND : GND    
+AO : GPIO34 
+
