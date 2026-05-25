@@ -10,4 +10,6 @@ Basic ESP32 sensor reading code added <br>
 Preparing for live hardware testing <br>
 ### System Architecture
 
-![System Architecture](images/system-architecture.jpg)
+The following diagram represents the workflow of the AI-driven air quality monitoring and prediction system.
+
+![System Workflow](architecture/workflow_related/ai-system-workflow.png)
