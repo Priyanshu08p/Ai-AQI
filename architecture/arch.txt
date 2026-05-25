@@ -1,0 +1,14 @@
+# System Architecture:
+The project follows an IoT + AI-based architecture for real-time air quality monitoring and prediction.
+
+## working:
+MQ-2 Sensor → ESP32 → Cloud Database → Dashboard → AI Prediction Model → Alert System
+
+## how it would work:
+
+1. MQ-2 sensor collects gas concentration data.
+2. ESP32 processes and sends data through Wi-Fi.
+3. Data is stored in cloud platforms like Firebase or ThingSpeak.
+4. Dashboard displays live air quality values.
+5. AI model analyzes historical data for AQI prediction.
+6. Alert system activates during unsafe conditions.
