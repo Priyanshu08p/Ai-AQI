@@ -1,0 +1,1 @@
+MQ-2 → ESP32 → Cloud → Dashboard → AI Prediction
