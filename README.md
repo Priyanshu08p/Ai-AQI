@@ -8,3 +8,6 @@ Repository structure completed <br>
 Hardware connection planning completed <br>
 Basic ESP32 sensor reading code added <br>
 Preparing for live hardware testing <br>
+### System Architecture
+
+![System Architecture](images/system-architecture.jpg)
