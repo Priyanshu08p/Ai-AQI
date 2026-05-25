@@ -12,4 +12,4 @@ Preparing for live hardware testing <br>
 
 The following diagram represents the workflow of the AI-driven air quality monitoring and prediction system.
 
-![System Workflow](architecture/workflow_related/ai-system-workflow.png)
+![Workflow](architecture/workflow_related/ai-workflow-diagram.png)
