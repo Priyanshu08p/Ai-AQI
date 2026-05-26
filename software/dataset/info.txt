@@ -1,1 +1,12 @@
 the data set used to train the model for this project.
+# Dataset Information
+
+This dataset contains AQI and air pollution-related parameters collected from Bangalore.
+
+The dataset will be used for:
+- AQI analysis
+- Data preprocessing
+- Machine learning model training
+- Air quality prediction
+
+Further preprocessing and cleaning will be performed before training the AI model.
