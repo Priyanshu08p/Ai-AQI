@@ -1,1 +1,11 @@
 Frontend dashboard files for air quality visualization.
+# Dashboard Concept
+
+The dashboard will display:
+- Live AQI values
+- Gas sensor readings
+- Historical data graphs
+- AI-predicted AQI
+- Alert notifications
+
+The interface is planned for both desktop and mobile view.
