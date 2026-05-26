@@ -1,0 +1,15 @@
+# AQI Prediction Model Planning
+
+The AI model will predict future AQI values using historical air quality data.
+
+## Planned Workflow
+1. Load dataset
+2. Clean and preprocess data
+3. Train machine learning model
+4. Evaluate prediction accuracy
+5. Display predicted AQI on dashboard
+
+## Possible Algorithms
+- Linear Regression
+- Decision Tree
+- Random Forest
