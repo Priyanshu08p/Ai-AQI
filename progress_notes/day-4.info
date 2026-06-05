@@ -1,3 +1,6 @@
 ## Current Approach
 For now, I'm training the model using PM2.5 data only. This helps me understand the model's performance and test the prediction workflow.
 Later, I'll add more air quality parameters to make the predictions more accurate.
+## Frontend
+Created the basic frontend page using HTML and CSS.
+Right now it's just a simple layout to get started. The dashboard design, live AQI data, and other features will be added later.
