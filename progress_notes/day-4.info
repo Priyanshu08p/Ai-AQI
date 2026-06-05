@@ -1,0 +1,3 @@
+## Current Approach
+For now, I'm training the model using PM2.5 data only. This helps me understand the model's performance and test the prediction workflow.
+Later, I'll add more air quality parameters to make the predictions more accurate.
