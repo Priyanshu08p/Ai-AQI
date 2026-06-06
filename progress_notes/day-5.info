@@ -1,0 +1,4 @@
+## Frontend Progress
+Today I worked on improving the frontend dashboard of the project.
+Created a basic dashboard layout using HTML and CSS which includes AQI monitoring cards, air quality status, predicted AQI section, and a placeholder for future graph visualization.
+The dashboard is currently using sample values and will later be connected with the backend and prediction model for real-time updates.
