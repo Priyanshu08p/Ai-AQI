@@ -1,0 +1,2 @@
+for today Updated the AQI prediction model to use multiple air quality parameters including PM2.5, PM10, NO2, SO2, CO, and O3.
+Previously the model was trained using only PM2.5 values. The current version uses multiple pollutant parameters to improve AQI prediction accuracy.
