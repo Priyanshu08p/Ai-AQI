@@ -1,6 +1,16 @@
 #aqi_prediction_model
 # aqi_prediction_model
+import matplotlib.pyplot as plt
 
+# Plot Actual vs Predicted AQI
+plt.figure(figsize=(8,5))
+plt.scatter(y_test, predictions)
+plt.xlabel("Actual AQI")
+plt.ylabel("Predicted AQI")
+plt.title("Actual vs Predicted AQI")
+
+plt.savefig("actual_vs_predicted.png")
+plt.show()
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
