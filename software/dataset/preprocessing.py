@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Load dataset
+
 data = pd.read_csv("../dataset/Bangalore_AQI_Dataset.csv")
 
 # Remove missing values
