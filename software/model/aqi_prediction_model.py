@@ -1,16 +1,9 @@
-#aqi_prediction_model
-# aqi_prediction_model
-import matplotlib.pyplot as plt
-# Plot Actual vs Predicted AQI
-plt.figure(figsize=(8,5))
-plt.scatter(y_test, predictions)
-plt.xlabel("Actual AQI")
-plt.ylabel("Predicted AQI")
-plt.title("Actual vs Predicted AQI")
+# aqi_prediction_model.py
 
-plt.savefig("actual_vs_predicted.png")
-plt.show()
 import pandas as pd
+import matplotlib.pyplot as plt
+import joblib
+
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, r2_score
@@ -24,12 +17,19 @@ y = data['AQI']
 
 # Split dataset
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
+    X,
+    y,
+    test_size=0.2,
+    random_state=42
 )
 
 # Train model
 model = LinearRegression()
 model.fit(X_train, y_train)
+
+# Save trained model
+joblib.dump(model, "aqi_model.pkl")
+print("Model saved successfully as aqi_model.pkl")
 
 # Predictions
 predictions = model.predict(X_test)
@@ -38,6 +38,27 @@ predictions = model.predict(X_test)
 mae = mean_absolute_error(y_test, predictions)
 r2 = r2_score(y_test, predictions)
 
-print("Model training completed.")
-print("Mean Absolute Error:", mae)
-print("R2 Score:", r2)
+print("\n===== Model Evaluation =====")
+print(f"Mean Absolute Error (MAE): {mae:.2f}")
+print(f"R² Score: {r2:.4f}")
+
+# Plot Actual vs Predicted AQI
+plt.figure(figsize=(8, 5))
+plt.scatter(y_test, predictions, alpha=0.7)
+plt.plot(
+    [y_test.min(), y_test.max()],
+    [y_test.min(), y_test.max()],
+    'r--',
+    linewidth=2
+)
+
+plt.xlabel("Actual AQI")
+plt.ylabel("Predicted AQI")
+plt.title("Actual vs Predicted AQI")
+plt.grid(True)
+
+# Save graph
+plt.savefig("actual_vs_predicted.png", dpi=300, bbox_inches="tight")
+plt.show()
+
+print("Graph saved successfully as actual_vs_predicted.png")
