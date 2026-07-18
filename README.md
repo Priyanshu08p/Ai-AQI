@@ -34,3 +34,6 @@ Cloud database integration <br>
 ESP32 live data collection and testing <br>
 Alert system implementation <br>
 Final deployment and project demonstration <br>
+
+## Resumed project development work  again 
+Resumed project development after a short break and continuing with model improvement and backend integration. <br>
