@@ -1,19 +1,19 @@
-# aqi_prediction_model.py
-
 import pandas as pd
-import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error, r2_score
 import joblib
 
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_absolute_error, r2_score
-
 # Load dataset
-data = pd.read_csv("../dataset/preprocessed-aqi-dataset.csv")
+data = pd.read_csv("../dataset/Bangalore_AQI_Cleaned.csv")
+
+# Keep only numeric columns
+data = data.select_dtypes(include=[np.number])
 
 # Features and target
-X = data[['PM2.5', 'PM10', 'NO2', 'SO2', 'CO', 'O3']]
-y = data['AQI']
+X = data.drop("AQI", axis=1)
+y = data["AQI"]
 
 # Split dataset
 X_train, X_test, y_train, y_test = train_test_split(
@@ -24,41 +24,25 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # Train model
-model = LinearRegression()
-model.fit(X_train, y_train)
+model = RandomForestRegressor(
+    n_estimators=150,
+    random_state=42
+)
 
-# Save trained model
-joblib.dump(model, "aqi_model.pkl")
-print("Model saved successfully as aqi_model.pkl")
+model.fit(X_train, y_train)
 
 # Predictions
 predictions = model.predict(X_test)
 
-# Evaluation
+# Model evaluation
 mae = mean_absolute_error(y_test, predictions)
 r2 = r2_score(y_test, predictions)
 
-print("\n===== Model Evaluation =====")
-print(f"Mean Absolute Error (MAE): {mae:.2f}")
-print(f"R² Score: {r2:.4f}")
+print(f"Mean Absolute Error: {mae:.2f}")
+print(f"R² Score: {r2:.2f}")
 
-# Plot Actual vs Predicted AQI
-plt.figure(figsize=(8, 5))
-plt.scatter(y_test, predictions, alpha=0.7)
-plt.plot(
-    [y_test.min(), y_test.max()],
-    [y_test.min(), y_test.max()],
-    'r--',
-    linewidth=2
-)
+# Save model
+joblib.dump(model, "bangalore_aqi_model.pkl")
 
-plt.xlabel("Actual AQI")
-plt.ylabel("Predicted AQI")
-plt.title("Actual vs Predicted AQI")
-plt.grid(True)
-
-# Save graph
-plt.savefig("actual_vs_predicted.png", dpi=300, bbox_inches="tight")
-plt.show()
-
-print("Graph saved successfully as actual_vs_predicted.png")
+print("Model saved successfully.")
+print("Features used:", list(X.columns))
