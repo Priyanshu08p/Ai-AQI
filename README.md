@@ -37,3 +37,9 @@ Final deployment and project demonstration <br>
 
 ## Resumed project development work  again 
 Resumed project development after a short break and continuing with model improvement and backend integration. <br>
+## Future Improvements
+
+- Real-time sensor integration with ESP32.
+- Live AQI dashboard.
+- Historical AQI visualization.
+- Deployment on cloud.
