@@ -1,14 +1,8 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
-
-// WiFi credentials
 const char* ssid = "YOUR_WIFI_NAME";
 const char* password = "YOUR_WIFI_PASSWORD";
-
-// Flask server
 const char* serverName = "http://YOUR_LOCAL_IP:5000/predict";
-
-// MQ2 sensor pin
 const int mq2Pin = 34;
 
 void setup() {
