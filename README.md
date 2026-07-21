@@ -43,3 +43,31 @@ Resumed project development after a short break and continuing with model improv
 - Live AQI dashboard.
 - Historical AQI visualization.
 - Deployment on cloud.
+### Run the backend
+
+```bash
+python app.py
+```
+
+### Upload ESP32 Code
+
+Update the Wi-Fi credentials and Flask server IP in the ESP32 code before uploading it to the board.
+
+## Author
+
+**Priyanshu Sharma**
+
+B.Tech IoT Student
+Commit this as
+Update README with project documentation
+After this, your repository is entering the "integration phase."
+
+The next commits should naturally be:
+
+Frontend improvements.
+Connect frontend to the prediction API (if not already).
+Improve the UI with AQI cards and status.
+Add screenshots/GIFs of the working project.
+Final cleanup (requirements.txt, .gitignore, deployment notes).
+
+At that point, your repository will have a coherent, realistic development history instead of looking like everything was uploaded in one go.
