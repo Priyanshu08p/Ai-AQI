@@ -7,7 +7,7 @@
 const char* ssid = "YOUR_WIFI_NAME";
 const char* password = "YOUR_WIFI_PASSWORD";
 
-// to it with the server- flask
+// to connect it with the server- flask
 const char* serverName = "http://YOUR_LOCAL_IP:5000/predict";
 
 // MQ2 sensor pin
