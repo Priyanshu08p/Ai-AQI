@@ -1,0 +1,55 @@
+# Day 8
+
+- Cleaned the backend code for GitHub.
+- Removed hardcoded file paths.
+- Updated the prediction endpoint.
+- Improved overall code readability.
+
+# Day 9
+
+- Cleaned ESP32 code.
+- Removed WiFi credentials and local IP.
+- Updated comments and organized the code.
+- Tested communication between ESP32 and backend.
+
+# Day 10
+
+- Updated model prediction script.
+- Removed unnecessary code.
+- Organized model files.
+- Verified model loading and prediction.
+
+# Day 11
+
+- Updated frontend dashboard.
+- Improved HTML structure.
+- Connected frontend with backend.
+- Checked API responses on dashboard.
+
+# Day 12
+
+- Updated README.
+- Added project workflow.
+- Updated features and current progress.
+- Improved repository documentation.
+
+# Day 13
+
+- Cleaned project structure.
+- Removed unnecessary files.
+- Organized folders for GitHub.
+- Checked project for broken paths.
+
+# Day 14
+
+- Tested complete workflow.
+- ESP32 → Backend → Model → Frontend.
+- Fixed small issues found during testing.
+- Improved overall project stability.
+
+# Day 15
+
+- Final repository cleanup.
+- Updated documentation.
+- Verified all modules are working together.
+- Prepared project for GitHub submission.
