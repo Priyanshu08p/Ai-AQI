@@ -1,57 +1,61 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AI Air Quality Monitor</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-```
-<header>
-    <h1>AI Air Quality Monitoring & Prediction System</h1>
-    <p>Real-Time AQI Monitoring Dashboard</p>
-</header>
+    <div class="container">
 
-<div class="dashboard">
+        <h1>🌍 AI Air Quality Monitor</h1>
 
-    <div class="card">
-        <h2>Current AQI</h2>
-        <p class="value">85</p>
+        <div class="dashboard">
+
+            <div class="left">
+
+                <h3>MQ2 Sensor Value</h3>
+                <p id="mq2">--</p>
+
+                <h3>Air Quality Index</h3>
+
+                <div class="aqi-circle" id="aqiCircle">--</div>
+
+                <p id="category"></p>
+                <p id="precaution"></p>
+
+            </div>
+
+            <div class="right">
+
+                <h3>Estimated Pollutants</h3>
+
+                <p>PM2.5 : <span id="pm25">--</span></p>
+                <p>PM10 : <span id="pm10">--</span></p>
+                <p>NO2 : <span id="no2">--</span></p>
+                <p>SO2 : <span id="so2">--</span></p>
+                <p>CO : <span id="co">--</span></p>
+                <p>O3 : <span id="o3">--</span></p>
+
+            </div>
+
+        </div>
+
+        <h3>Live AQI Graph</h3>
+
+        <canvas id="aqiChart"></canvas>
+
     </div>
 
-    <div class="card moderate">
-        <h2>Air Quality Status</h2>
-        <p class="status">Moderate</p>
-    </div>
-
-    <div class="card">
-        <h2>Predicted AQI</h2>
-        <p class="value">92</p>
-    </div>
-
-    <div class="card">
-        <h2>Last Updated</h2>
-        <p>10:45 AM</p>
-    </div>
-
-</div>
-
-<div class="graph-section">
-    <h2>AQI Trend Analysis</h2>
-    <div class="graph-placeholder">
-        Graph will be displayed here
-    </div>
-</div>
-
-<div class="sensor-section">
-    <h2>Sensor Information</h2>
-    <p>MQ-2 Sensor Reading: 412</p>
-    <p>System Status: Active</p>
-</div>
-```
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
