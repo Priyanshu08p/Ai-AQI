@@ -3,11 +3,11 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-// WiFi credentials
+// WiFi info-
 const char* ssid = "YOUR_WIFI_NAME";
 const char* password = "YOUR_WIFI_PASSWORD";
 
-// Flask server
+// to it with the server- flask
 const char* serverName = "http://YOUR_LOCAL_IP:5000/predict";
 
 // MQ2 sensor pin
