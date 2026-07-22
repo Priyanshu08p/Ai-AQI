@@ -58,11 +58,6 @@ Update the Wi-Fi credentials and Flask server IP in the ESP32 code before upload
 **Priyanshu Sharma**
 
 B.Tech IoT Student
-Commit this as
-Update README with project documentation
-After this, your repository is entering the "integration phase."
-
-The next commits should naturally be:
 
 Frontend improvements.
 Connect frontend to the prediction API (if not already).
